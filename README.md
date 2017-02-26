@@ -1,2 +1,2 @@
-# Digital-Horizon-Compass
+## Digital Horizon Compass
 Rilevatore di assetto e orientamento per robot mobili
