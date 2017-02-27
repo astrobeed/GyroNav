@@ -1,5 +1,5 @@
-## Digital Horizon Compass
-#####Rilevatore di assetto e orientamento per robot mobili.
+## GyroNav
+#####Sensore assetto e orientamento per robot mobili.
 
 Si tratta di un sensore assoluto che misura l'inclinazione sugli assi X e Y del piano e rileva l'orientamento rispetto al Nord magnetico. 
 
