@@ -1,0 +1,114 @@
+// codice deprecato
+
+/*
+  // Output compass data down the serial port, only for test/debug purpose
+  void Output(MagnetometerRaw raw, MagnetometerScaled scaled, float heading, float headingDegrees)
+  {
+  Serial.print("Raw:\t");
+  Serial.print(raw.XAxis);
+  Serial.print("   ");
+  Serial.print(raw.YAxis);
+  Serial.print("   ");
+  Serial.print(raw.ZAxis);
+  Serial.print("   \tScaled:\t");
+
+  Serial.print(scaled.XAxis);
+  Serial.print("   ");
+  Serial.print(scaled.YAxis);
+  Serial.print("   ");
+  Serial.print(scaled.ZAxis);
+
+  Serial.print("   \tHeading:\t");
+  Serial.print(heading);
+  Serial.print(" Radians   \t");
+  Serial.print(headingDegrees);
+  Serial.println(" Degrees   \t");
+  }
+*/
+
+/*
+        Serial.print("DAT: ");
+        Serial.print(ypr[2]*RADIANS_TO_DEGREES, 2);
+        Serial.print(" : ");
+        Serial.print(ypr[1]*RADIANS_TO_DEGREES, 2);
+        Serial.print(" : ");
+        Serial.print(ypr[0]*RADIANS_TO_DEGREES, 2);
+        Serial.print(" : ");
+        Serial.println(headingDegrees, 2);
+*/
+
+/*
+  Serial.print(conta_cicli, DEC);
+  Serial.print(",");
+  Serial.print(ypr[0]*RADIANS_TO_DEGREES, 1);
+  Serial.print(",");
+  Serial.print(ypr[1]*RADIANS_TO_DEGREES, 1);
+  Serial.print(",");
+  Serial.print(ypr[2]*RADIANS_TO_DEGREES, 1);
+  Serial.print(",");
+  Serial.print(headingDegrees, 2);
+
+  mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+
+  Serial.print(",");
+  Serial.print(ax);
+  Serial.print(",");
+  Serial.print(ay);
+  Serial.print(",");
+  Serial.print(az);
+  Serial.print(",");
+  Serial.print(gx);
+  Serial.print(",");
+  Serial.print(gy);
+  Serial.print(",");
+  Serial.print(gz);
+  Serial.print(",");
+  Serial.println("0");
+*/
+
+/*
+  Serial.println("Constructing new HMC5883L");
+  compass = HMC5883L(); // Construct HMC5883 compass
+
+  // The valid gauss values are: 0.88, 1.3, 1.9, 2.5, 4.0, 4.7, 5.6, 8.1
+  Serial.println("Setting scale to +/- 1.3 Gauss");
+  error = compass.SetScale(1.3); // Set the scale of the compass.
+  if (error != 0) // If there is an error, print it out.
+  Serial.println(compass.GetErrorText(error));
+
+  Serial.println("Setting measurement mode to continous.");
+  error = compass.SetMeasurementMode(Measurement_Continuous); // Set the measurement mode to Continuous
+  if (error != 0) // If there is an error, print it out.
+  Serial.println(compass.GetErrorText(error));
+*/
+
+/*
+   // raw values from the compass (not scaled).
+   MagnetometerRaw raw = compass.ReadRawAxis();
+   // scaled values from the compass
+   MagnetometerScaled scaled = compass.ReadScaledAxis();
+   // Values are accessed like so:
+   int MilliGauss_OnThe_XAxis = scaled.XAxis;// (or YAxis, or ZAxis)
+   // Calculate heading when the magnetometer is level, then correct for signs of axis.
+   heading = atan2(scaled.YAxis, scaled.XAxis);
+
+   // http://www.magnetic-declination.com/
+   // Rome is: 2° 44' E, which is 2.73 Degrees, or 0.04764747 radians
+   // If you cannot find your Declination, comment out these two lines, your compass will be slightly off.
+   float declinationAngle = 0.0476; // magnetic declination in radians
+   heading += declinationAngle;
+
+   // Correct for when signs are reversed.
+   if (heading < 0)
+   heading += 2 * PI;
+
+   // Check for wrap due to addition of declination.
+   if (heading > 2 * PI)
+   heading -= 2 * PI;
+
+   // Convert radians to degrees
+   headingDegrees = heading * RADIANS_TO_DEGREES;
+
+   // Output compass data
+   // Output(raw, scaled, heading, headingDegrees);
+*/
