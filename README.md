@@ -12,4 +12,5 @@ La cartella `Software` contiene lo sketch per Arduino e uno sketch per Processin
 La cartella `Hardware` contiene lo schema di cablaggio tra Arduino pro mini e le breakout board dei sensori.
 
 ## changelog
-* 25-Feb-2017 versione 1.0
+* 25-Feb-2017 versione 1.0, prima release stabile
+* 27-Feb-2017 versione 1.1, aggiunta media mobile
